@@ -1,2 +1,6 @@
-# Default ignored files
-/workspace.xml
+# Dirs
+__pycache__
+
+# Files
+*sqlite3
+*.pyc
