@@ -1,0 +1,8 @@
+# Dirs
+shopy/mainapp/__pycache__
+shopy/shopy/__pycache__
+
+# Files
+*sqlite3
+*.pyc
+shopy/.idea/workspace.xml
