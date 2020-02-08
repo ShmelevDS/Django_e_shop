@@ -1,6 +1,5 @@
-{% load static %}
-
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -10,22 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,700,900&display=swap" rel="stylesheet">
 </head>
-<style>
-	.promo {
-		background: url({% static '/img/new_promo.png' %}) center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
-
-	.adv-sale {
-		height: 80px;
-		width: 80px;
-		background-image: url({% static '/img/icons/sale.png' %});
-		background-repeat: no-repeat;
-	}
-</style>
 <body>
 	<div class="container">
 		<div class="upper-header">
@@ -135,7 +118,7 @@
 		<div class="main-body">
 			<div class="title">
 				<p class="title-text"><span>NEW</span> ARRIVALS</p>
-				<p class="subtitle-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p class="title-text">
+				<p class="subtitle-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 			</div>
 			<div class="big-product-cards">
 				<div class="big-card">
@@ -226,7 +209,7 @@
 							<div class="color blue"></div>
 							<div class="color green"></div>
 						</div>
-						<img src="./static/img/icons/hor_separator.png" alt="hor_sep" class="hor-separator">
+						<img src="{% static '/img/icons/hor_separator.png' %}" alt="hor_sep" class="hor-separator">
 						<div class="hovered-icons">
 							<a href="#" class="hov-icon-link"><img src="{% static '/img/icons/share.png' %}" alt="share" class="hovered-icon"></a>
 							<a href="#" class="hov-icon-link"><img src="{% static '/img/icons/cart.png' %}" alt="cart" class="hovered-icon with-margin cart"></a>
@@ -264,7 +247,7 @@
 			</div>
 			<div class="title">
 				<p class="title-text"><span>BEST</span> SALES</p>
-				<p class="subtitle-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p class="title-text">
+				<p class="subtitle-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 			</div>
 			<div class="small-product-cards">
 				<div class="small-card">
