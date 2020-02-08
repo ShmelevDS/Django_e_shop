@@ -5,37 +5,53 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Shopy - Home</title>
-	<link rel="stylesheet" type="text/css" href="./static/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,700,900&display=swap" rel="stylesheet">
 </head>
+<style>
+	.promo {
+	background: url(/static/img/new_promo.png) center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.adv-sale {
+	height: 80px;
+	width: 80px;
+	background-image: url(/static/img/icons/sale.png);
+	background-repeat: no-repeat;
+}
+</style>
 <body>
 	<div class="container">
 		<div class="upper-header">
 			<div class="contacts-grid">
 				<ul class="contacts">
 					<li class='contacts-items'>
-						<img class="mail-icon-header" src="./static/img/icons/mail.png" alt="mail">
+						<img class="mail-icon-header" src="/static/img/icons/mail.png" alt="mail">
 						info@shopy.com
 					</li>
 					<li class='contacts-items'>
-						<img src="./static/img/icons/phone.png" alt="phone">
+						<img src="/static/img/icons/phone.png" alt="phone">
 						996 - 5553 - 453
 					</li>
 				</ul>
 				<ul class="socials">
 					<li class="social-icon">
 						<a href="#" class="social-icon-link">
-							<img src="./static/img/icons/facebook.png" alt="facebook">
+							<img src="/static/img/icons/facebook.png" alt="facebook">
 						</a>
 					</li>
 					<li class="social-icon">
 						<a href="#" class="social-icon-link">
-							<img src="./static/img/icons/twitter.png" alt="twitter">
+							<img src="/static/img/icons/twitter.png" alt="twitter">
 						</a>
 					</li>
 					<li class="social-icon">
 						<a href="#" class="social-icon-link">
-							<img src="./static/img/icons/google.png" alt="gooogle">
+							<img src="/static/img/icons/google.png" alt="gooogle">
 						</a>
 					</li>
 					<li class="social-icon">
@@ -49,7 +65,7 @@
 		<div class="header">
 			<div class="header-grid">
 				<a href="#" class="logo-link">
-					<img src="./static/img/icons/logo.png" alt="logo" class="logo">
+					<img src="/static/img/icons/logo.png" alt="logo" class="logo">
 				</a>
 				<div class="navbar">
 					<ul class="nav-list">
@@ -74,26 +90,24 @@
 					<ul class="navbar-icons-list">
 						<li class="navbar-icons-item">
 							<a href="#" class="navbar-icons-link">
-								<img src="./static/img/icons/search.png" alt="search">
+								<img src="/static/img/icons/search.png" alt="search">
 							</a>
 						</li>
 						<li class="navbar-icons-item">
 							<a href="#" class="navbar-icons-link">
-								<img src="./static/img/icons/user.png" alt="user">
+								<img src="/static/img/icons/user.png" alt="user">
 							</a>
 						</li>
 						<li class="navbar-icons-item">
 							<a href="#" class="navbar-icons-link">
-								<img src="./static/img/icons/cart.png" alt="cart">
+								<img src="/static/img/icons/cart.png" alt="cart">
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<div class="promo" style="background:url(./static/img/new_promo.png) center center;
-			-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;
-			background-size: cover;">
+		<div class="promo">
 			<div class="promo-subgrid">
 				<div class="scroll-bar scroll-up">
 					<a href="#" class="scroll"></a>
@@ -104,7 +118,7 @@
 					<p class="promo-descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 					<span class="price">Price: $120</span>
 					<a class="order-now" href="#">
-						<img src="./static/img/icons/orange_cart.png" alt="cart" class="cart">
+						<img src="/static/img/icons/orange_cart.png" alt="cart" class="cart">
 						<span>Order now</span>
 					</a>
 				</div>
@@ -124,12 +138,12 @@
 			<div class="big-product-cards">
 				<div class="big-card">
 					<div class="front">
-						<img class="product-img" src="./static/img/products/product_1.png" alt="product1">
+						<img class="product-img" src="/static/img/products/product_1.png" alt="product1">
 						<p class="product-name">Reebok Track Jacket</p>
 						<p class="product-price">100$</p>
 					</div>
 					<div class="back">
-						<img class="product-img-small" src="./static/img/products/product_1.png" alt="product1">
+						<img class="product-img-small" src="/static/img/products/product_1.png" alt="product1">
 						<p class="product-name-hover">Reebok Track Jacket</p>
 						<p class="sizes">Sizes: S - M - L - XL</p>
 						<div class="colors">
@@ -138,7 +152,7 @@
 							<div class="color blue"></div>
 							<div class="color green"></div>
 						</div>
-						<img src="./static/img/icons/hor_separator.png" alt="hor_sep" class="hor-separator">
+						<img src="/static/img/icons/hor_separator.png" alt="hor_sep" class="hor-separator">
 						<div class="hovered-icons">
 							<a href="#" class="hov-icon-link"><img src="./static/img/icons/share.png" alt="share" class="hovered-icon"></a>
 							<a href="#" class="hov-icon-link"><img src="./static/img/icons/cart.png" alt="cart" class="hovered-icon with-margin cart"></a>
@@ -164,20 +178,44 @@
 						</div>
 						<img src="./static/img/icons/hor_separator.png" alt="hor_sep" class="hor-separator">
 						<div class="hovered-icons">
-							<a href="#" class="hov-icon-link"><img src="./static/img/icons/share.png" alt="share" class="hovered-icon"></a>
-							<a href="#" class="hov-icon-link"><img src="./static/img/icons/cart.png" alt="cart" class="hovered-icon with-margin cart"></a>
-							<a href="#" class="hov-icon-link"><img src="./static/img/icons/like.png" alt="like" class="hovered-icon with-margin"></a>
+							<a href="#" class="hov-icon-link"><img src="/static/img/icons/share.png" alt="share" class="hovered-icon"></a>
+							<a href="#" class="hov-icon-link"><img src="/static/img/icons/cart.png" alt="cart" class="hovered-icon with-margin cart"></a>
+							<a href="#" class="hov-icon-link"><img src="/static/img/icons/like.png" alt="like" class="hovered-icon with-margin"></a>
 						</div>
 					</div>
 				</div>
 				<div class="big-card">
 					<div class="front">
-						<img class="product-img" src="./static/img/products/product_3.png" alt="product3">
+						<img class="product-img" src="/static/img/products/product_3.png" alt="product3">
 						<p class="product-name">Reebok Track Jacket</p>
 						<p class="product-price">100$</p>
 					</div>
 					<div class="back">
-						<img class="product-img-small" src="./static/img/products/product_3.png" alt="product3">
+						<img class="product-img-small" src="/static/img/products/product_3.png" alt="product3">
+						<p class="product-name-hover">Reebok Track Jacket</p>
+						<p class="sizes">Sizes: S - M - L - XL</p>
+						<div class="colors">
+							<div class="color red"></div>
+							<div class="color black"></div>
+							<div class="color blue"></div>
+							<div class="color green"></div>
+						</div>
+						<img src="/static/img/icons/hor_separator.png" alt="hor_sep" class="hor-separator">
+						<div class="hovered-icons">
+							<a href="#" class="hov-icon-link"><img src="/static/img/icons/share.png" alt="share" class="hovered-icon"></a>
+							<a href="#" class="hov-icon-link"><img src="/static/img/icons/cart.png" alt="cart" class="hovered-icon with-margin cart"></a>
+							<a href="#" class="hov-icon-link"><img src="/static/img/icons/like.png" alt="like" class="hovered-icon with-margin"></a>
+						</div>
+					</div>
+				</div>
+				<div class="big-card">
+					<div class="front">
+						<img class="product-img" src="/static/img/products/product_2.png" alt="product2">
+						<p class="product-name">Reebok Track Jacket</p>
+						<p class="product-price">100$</p>
+					</div>
+					<div class="back">
+						<img class="product-img-small" src="/static/img/products/product_2.png" alt="product2">
 						<p class="product-name-hover">Reebok Track Jacket</p>
 						<p class="sizes">Sizes: S - M - L - XL</p>
 						<div class="colors">
@@ -188,33 +226,9 @@
 						</div>
 						<img src="./static/img/icons/hor_separator.png" alt="hor_sep" class="hor-separator">
 						<div class="hovered-icons">
-							<a href="#" class="hov-icon-link"><img src="./static/img/icons/share.png" alt="share" class="hovered-icon"></a>
-							<a href="#" class="hov-icon-link"><img src="./static/img/icons/cart.png" alt="cart" class="hovered-icon with-margin cart"></a>
-							<a href="#" class="hov-icon-link"><img src="./static/img/icons/like.png" alt="like" class="hovered-icon with-margin"></a>
-						</div>
-					</div>
-				</div>
-				<div class="big-card">
-					<div class="front">
-						<img class="product-img" src="./static/img/products/product_2.png" alt="product2">
-						<p class="product-name">Reebok Track Jacket</p>
-						<p class="product-price">100$</p>
-					</div>
-					<div class="back">
-						<img class="product-img-small" src="./static/img/products/product_2.png" alt="product2">
-						<p class="product-name-hover">Reebok Track Jacket</p>
-						<p class="sizes">Sizes: S - M - L - XL</p>
-						<div class="colors">
-							<div class="color red"></div>
-							<div class="color black"></div>
-							<div class="color blue"></div>
-							<div class="color green"></div>
-						</div>
-						<img src="./static/img/icons/hor_separator.png" alt="hor_sep" class="hor-separator">
-						<div class="hovered-icons">
-							<a href="#" class="hov-icon-link"><img src="./static/img/icons/share.png" alt="share" class="hovered-icon"></a>
-							<a href="#" class="hov-icon-link"><img src="./static/img/icons/cart.png" alt="cart" class="hovered-icon with-margin cart"></a>
-							<a href="#" class="hov-icon-link"><img src="./static/img/icons/like.png" alt="like" class="hovered-icon with-margin"></a>
+							<a href="#" class="hov-icon-link"><img src="/static/img/icons/share.png" alt="share" class="hovered-icon"></a>
+							<a href="#" class="hov-icon-link"><img src="/static/img/icons/cart.png" alt="cart" class="hovered-icon with-margin cart"></a>
+							<a href="#" class="hov-icon-link"><img src="/static/img/icons/like.png" alt="like" class="hovered-icon with-margin"></a>
 						</div>
 					</div>
 				</div>
@@ -227,8 +241,7 @@
 			<div class="adv-section">
 				<div class="adv adv-1">
 					<div class="adv-grid">
-						<div class="adv-sale adv-item" style="height: 80px; width: 80px;
-						background-image: url(./static/img/icons/sale.png); background-repeat: no-repeat;">
+						<div class="adv-sale adv-item">
 							<p class="sale-text-1">Sale</p>
 							<p class="sale-text-2">50%</p>
 						</div>
@@ -237,7 +250,7 @@
 							<p class="adv-text-subtitle">Half Jacket + Skiny Trousers + Boot leather</p>
 						</div>
 						<div class="adv-price adv-item">
-							<a class="cart-link" href="#"><img src="./static/img/icons/orange_cart.png" alt="cart" class="cart-img"></a>
+							<a class="cart-link" href="#"><img src="/static/img/icons/orange_cart.png" alt="cart" class="cart-img"></a>
 							<span>120$</span>
 						</div>
 					</div>
@@ -254,24 +267,24 @@
 			<div class="small-product-cards">
 				<div class="small-card">
 					<div class="small-card-grid">
-						<img src="./static/img/products/product_4.png" alt="product" class="bs-product-img">
-						<img src="./static/img/icons/seprator.png" alt="separator" class="separator">
+						<img src="/static/img/products/product_4.png" alt="product" class="bs-product-img">
+						<img src="/static/img/icons/seprator.png" alt="separator" class="separator">
 						<p class="bs-product-name">Reebok Track Jacket</p>
 						<div class="changing-content">
 							<div class="shown">
-								<img src="./static/img/icons/rating.png" alt="rating" class="rating">
+								<img src="/static/img/icons/rating.png" alt="rating" class="rating">
 								<p class="bs-product-price">100$</p>
 							</div>
 							<div class="hidden">
-								<a class="add-to-cart" href="#"><img src="./static/img/icons/orange_cart.png" alt="orange_cart" class="cart-img"> Add to cart</a>
+								<a class="add-to-cart" href="#"><img src="/static/img/icons/orange_cart.png" alt="orange_cart" class="cart-img"> Add to cart</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="small-card">
 					<div class="small-card-grid">
-						<img src="./static/img/products/product_4.png" alt="product" class="bs-product-img">
-						<img src="./static/img/icons/seprator.png" alt="separator" class="separator">
+						<img src="/static/img/products/product_4.png" alt="product" class="bs-product-img">
+						<img src="/static/img/icons/seprator.png" alt="separator" class="separator">
 						<p class="bs-product-name">Reebok Track Jacket</p>
 						<div class="changing-content">
 							<div class="shown">
@@ -279,23 +292,23 @@
 								<p class="bs-product-price">100$</p>
 							</div>
 							<div class="hidden">
-								<a class="add-to-cart" href="#"><img src="./static/img/icons/orange_cart.png" alt="orange_cart" class="cart-img"> Add to cart</a>
+								<a class="add-to-cart" href="#"><img src="/static/img/icons/orange_cart.png" alt="orange_cart" class="cart-img"> Add to cart</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="small-card">
 					<div class="small-card-grid">
-						<img src="./static/img/products/product_4.png" alt="product" class="bs-product-img">
-						<img src="./static/img/icons/seprator.png" alt="separator" class="separator">
+						<img src="/static/img/products/product_4.png" alt="product" class="bs-product-img">
+						<img src="/static/img/icons/seprator.png" alt="separator" class="separator">
 						<p class="bs-product-name">Reebok Track Jacket</p>
 						<div class="changing-content">
 							<div class="shown">
-								<img src="./static/img/icons/rating.png" alt="rating" class="rating">
+								<img src="/static/img/icons/rating.png" alt="rating" class="rating">
 								<p class="bs-product-price">100$</p>
 							</div>
 							<div class="hidden">
-								<a class="add-to-cart" href="#"><img src="./static/img/icons/orange_cart.png" alt="orange_cart" class="cart-img"> Add to cart</a>
+								<a class="add-to-cart" href="#"><img src="/static/img/icons/orange_cart.png" alt="orange_cart" class="cart-img"> Add to cart</a>
 							</div>
 						</div>
 					</div>
@@ -306,7 +319,7 @@
 					<div class="feedback-subgrid">
 						<p class="feedback-title" >NEWS LETTER</p>
 						<p class="feedback-subtitle" >Join us now to get all news and special offers</p>
-						<img class="mail-icon" src="./static/img/icons/mail.png" alt="mail">
+						<img class="mail-icon" src="/static/img/icons/mail.png" alt="mail">
 						<form class="email-form" action="" method="post">
 							<input class="email-input" placeholder="type your email here" type="text" required>
 							<button class="send-email-button" type="submit"><span>Join us!</span></button>
@@ -319,7 +332,7 @@
 			<div class="footer-grid">
 				<div class="copyright-subgrid">
 					<a href="#" class="lower-logo-link">
-						<img src="./static/img/icons/logo.png" alt="lower-logo" class="lower-logo">
+						<img src="/static/img/icons/logo.png" alt="lower-logo" class="lower-logo">
 					</a>
 					<span class="copyright-text">Denis Shmelev &copy; 2020</span>
 				</div>
@@ -355,7 +368,7 @@
 				</ul>
 				<div class="payments-subgrid">
 					<span class="payments-text">Payments methods</span>
-					<img src="./static/img/icons/paymments.png" alt="payments" class="payments-img">
+					<img src="/static/img/icons/paymments.png" alt="payments" class="payments-img">
 				</div>
 			</div>
 		</div>
