@@ -1,6 +1,6 @@
 # Dirs
-shopy/mainapp/__pycache__
-shopy/shopy/__pycache__
+mainapp/__pycache__
+shopy/__pycache__
 
 # Files
 *sqlite3
