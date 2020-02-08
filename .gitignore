@@ -6,3 +6,4 @@ shopy/shopy/__pycache__
 *sqlite3
 *.pyc
 shopy/.idea/workspace.xml
+*.xml
