@@ -1,8 +1,0 @@
-# Dirs
-mainapp/__pycache__
-shopy/__pycache__
-
-# Files
-*sqlite3
-*.pyc
-*.xml
