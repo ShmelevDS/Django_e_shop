@@ -1,0 +1,160 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+<div class="container">
+	{% block upper-header %}
+	<div class="upper-header">
+		<div class="contacts-grid">
+			<ul class="contacts">
+				{% for icon in icons %}
+				{% if icon.category.name == 'Contacts' %}
+				<li class='contacts-items'>
+					<img class="mail-icon-header" src="{{ media_url }}{{ icon.image }}" alt="{{ icon.name }}">
+					<span>{{ icon.text }}</span>
+				</li>
+				{% endif %}
+				{% endfor %}
+			</ul>
+			<ul class="socials">
+				{% for icon in icons %}
+				{% if icon.category.name == 'Social media' %}
+				<li class="social-icon">
+					<a href="#" class="social-icon-link">
+						<img src="{{ media_url }}{{ icon.image }}" alt="{{ icon.name }}">
+					</a>
+				</li>
+				{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	{% endblock upper-header %}
+
+	{% block content %}
+	<div class="promo">
+		<div class="promo-subgrid">
+			<div class="scroll-bar scroll-up">
+				<a href="#" class="scroll"></a>
+			</div>
+			<div class="promo-text">
+				<p class="promo-title">FULL WINTER KIT</p>
+				<p class="promo-subtitle">Half Jacket + Skiny Trousers + Boot leather</p>
+				<p class="promo-descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				<span class="price">Price: $120</span>
+				<a class="order-now" href="#">
+					<img src="{% static '/img/icons/orange_cart.png' %}" alt="cart" class="cart">
+					<span>Order now</span>
+				</a>
+			</div>
+			<div class="scroll-bar scroll-moving">
+				<a href="#" class="moving-scroll"></a>
+			</div>
+			<div class="scroll-bar scroll-down">
+				<a href="#" class="scroll"></a>
+			</div>
+		</div>
+	</div>
+	<div class="main-body">
+		<div class="title">
+			<p class="title-text"><span>NEW</span> ARRIVALS</p>
+			<p class="subtitle-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+		</div>
+		<div class="big-product-cards">
+			{% for product in products %}
+			{% if product.category.name == 'Jackets' %}
+			<div class="big-card">
+				<div class="front">
+					<img class="product-img" src="{{ media_url }}{{ product.image }}" alt="{{ product.short_desc }}">
+					<p class="product-name">{{ product.name }}</p>
+					<p class="product-price">{{ product.price }}$</p>
+				</div>
+				<div class="back">
+					<img class="product-img-small" src="{{ media_url }}{{ product.image }}" alt="{{ product.short_desc }}">
+					<p class="product-name-hover">{{ product.name }}</p>
+					<p class="sizes">Sizes: {{ product.size }}</p>
+					<div class="colors">
+						<div class="color red"></div>
+						<div class="color black"></div>
+						<div class="color blue"></div>
+						<div class="color green"></div>
+					</div>
+					<img src="{% static '/img/icons/hor_separator.png' %}" alt="hor_sep" class="hor-separator">
+					<div class="hovered-icons">
+						<a href="#" class="hov-icon-link"><img src="{% static '/img/icons/share.png' %}" alt="share" class="hovered-icon"></a>
+						<a href="#" class="hov-icon-link"><img src="{% static '/img/icons/cart.png' %}" alt="cart" class="hovered-icon with-margin cart"></a>
+						<a href="#" class="hov-icon-link"><img src="{% static '/img/icons/like.png' %}" alt="like" class="hovered-icon with-margin"></a>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+		<div class="more-button">
+			<a href="#" class="more-button-link">
+				<img src="{% static '/img/icons/dots.png' %}" alt="dots" class="dots">
+			</a>
+		</div>
+		<div class="adv-section">
+			<div class="adv adv-1">
+				<div class="adv-grid">
+					<div class="adv-sale adv-item">
+						<p class="sale-text-1">Sale</p>
+						<p class="sale-text-2">50%</p>
+					</div>
+					<div class="adv-text adv-item">
+						<p class="adv-text-title">FULL WINTER KIT</p>
+						<p class="adv-text-subtitle">Half Jacket + Skiny Trousers + Boot leather</p>
+					</div>
+					<div class="adv-price adv-item">
+						<a class="cart-link" href="#"><img src="{% static '/img/icons/orange_cart.png' %}" alt="cart" class="cart-img"></a>
+						<span>120$</span>
+					</div>
+				</div>
+			</div>
+			<div class="adv adv-2">
+				<p class="free-adv-text-1">Your advertisment may be here!</p>
+				<p class="free-adv-text-2">470 x 100</p>
+			</div>
+		</div>
+		<div class="title">
+			<p class="title-text"><span>BEST</span> SALES</p>
+			<p class="subtitle-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+		</div>
+		<div class="small-product-cards">
+			{% for product in products %}
+			{% if product.category.name == 'Leather Jackets' %}
+			<div class="small-card">
+				<div class="small-card-grid">
+					<img src="{{ media_url }}{{ product.image }}" alt="{{ product.short_desc }}" class="bs-product-img">
+					<img src="{% static '/img/icons/seprator.png' %}" alt="separator" class="separator">
+					<p class="bs-product-name">{{ product.name }}</p>
+					<div class="changing-content">
+						<div class="shown">
+							<img src="{% static '/img/icons/rating.png' %}" alt="rating" class="rating">
+							<p class="bs-product-price">{{ product.price }}$</p>
+						</div>
+						<div class="hidden">
+							<a class="add-to-cart" href="#"><img src="{% static '/img/icons/orange_cart.png' %}" alt="orange_cart" class="cart-img"> Add to cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+		<div class="feedback-wrapper">
+			<div class="feedback">
+				<div class="feedback-subgrid">
+					<p class="feedback-title" >NEWS LETTER</p>
+					<p class="feedback-subtitle" >Join us now to get all news and special offers</p>
+					<img class="mail-icon" src="{% static '/img/icons/mail.png' %}" alt="mail">
+					<form class="email-form" action="" method="post">
+						<input class="email-input" placeholder="type your email here" type="text" required>
+						<button class="send-email-button" type="submit"><span>Join us!</span></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock content %}
+</div>
