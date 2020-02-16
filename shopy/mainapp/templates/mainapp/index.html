@@ -6,20 +6,24 @@
 	<div class="upper-header">
 		<div class="contacts-grid">
 			<ul class="contacts">
-				{% for contact_icon in contact_icons %}
+				{% for icon in icons %}
+				{% if icon.category.name == 'Contacts' %}
 				<li class='contacts-items'>
-					<img class="mail-icon-header" src="{% static '/img/icons/' %}{{ contact_icon.img_src }}" alt="{{ contact_icon.img_alt }}">
-					<span>{{ contact_icon.text }}</span>
+					<img class="mail-icon-header" src="{{ media_url }}{{ icon.image }}" alt="{{ icon.name }}">
+					<span>{{ icon.text }}</span>
 				</li>
+				{% endif %}
 				{% endfor %}
 			</ul>
 			<ul class="socials">
-				{% for social_icon in social_icons %}
+				{% for icon in icons %}
+				{% if icon.category.name == 'Social media' %}
 				<li class="social-icon">
 					<a href="#" class="social-icon-link">
-						<img src="{% static '/img/icons/' %}{{ social_icon.img_src }}" alt="{{ social_icon.img_alt }}">
+						<img src="{{ media_url }}{{ icon.image }}" alt="{{ icon.name }}">
 					</a>
 				</li>
+				{% endif %}
 				{% endfor %}
 			</ul>
 		</div>
@@ -56,17 +60,18 @@
 			<p class="subtitle-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 		</div>
 		<div class="big-product-cards">
-			{% for big_card in big_cards %}
+			{% for product in products %}
+			{% if product.category.name == 'Jackets' %}
 			<div class="big-card">
 				<div class="front">
-					<img class="product-img" src="{% static '/img/products/' %}{{ big_card.img_src }}" alt="{{ big_card.img_alt }}">
-					<p class="product-name">{{ big_card.name }}</p>
-					<p class="product-price">{{ big_card.price }}</p>
+					<img class="product-img" src="{{ media_url }}{{ product.image }}" alt="{{ product.short_desc }}">
+					<p class="product-name">{{ product.name }}</p>
+					<p class="product-price">{{ product.price }}$</p>
 				</div>
 				<div class="back">
-					<img class="product-img-small" src="{% static '/img/products/' %}{{ big_card.img_src }}" alt="{{ big_card.img_alt }}">
-					<p class="product-name-hover">Reebok Track Jacket</p>
-					<p class="sizes">Sizes: S - M - L - XL</p>
+					<img class="product-img-small" src="{{ media_url }}{{ product.image }}" alt="{{ product.short_desc }}">
+					<p class="product-name-hover">{{ product.name }}</p>
+					<p class="sizes">Sizes: {{ product.size }}</p>
 					<div class="colors">
 						<div class="color red"></div>
 						<div class="color black"></div>
@@ -81,6 +86,7 @@
 					</div>
 				</div>
 			</div>
+			{% endif %}
 			{% endfor %}
 		</div>
 		<div class="more-button">
@@ -115,16 +121,17 @@
 			<p class="subtitle-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 		</div>
 		<div class="small-product-cards">
-			{% for small_card in small_cards %}
+			{% for product in products %}
+			{% if product.category.name == 'Leather Jackets' %}
 			<div class="small-card">
 				<div class="small-card-grid">
-					<img src="{% static '/img/products/' %}{{ small_card.img_src }}" alt="{{ small_card.img_alt }}" class="bs-product-img">
+					<img src="{{ media_url }}{{ product.image }}" alt="{{ product.short_desc }}" class="bs-product-img">
 					<img src="{% static '/img/icons/seprator.png' %}" alt="separator" class="separator">
-					<p class="bs-product-name">{{ small_card.name }}</p>
+					<p class="bs-product-name">{{ product.name }}</p>
 					<div class="changing-content">
 						<div class="shown">
 							<img src="{% static '/img/icons/rating.png' %}" alt="rating" class="rating">
-							<p class="bs-product-price">{{ small_card.price }}</p>
+							<p class="bs-product-price">{{ product.price }}$</p>
 						</div>
 						<div class="hidden">
 							<a class="add-to-cart" href="#"><img src="{% static '/img/icons/orange_cart.png' %}" alt="orange_cart" class="cart-img"> Add to cart</a>
@@ -132,6 +139,7 @@
 					</div>
 				</div>
 			</div>
+			{% endif %}
 			{% endfor %}
 		</div>
 		<div class="feedback-wrapper">
