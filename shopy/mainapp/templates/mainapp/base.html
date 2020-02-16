@@ -1,11 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 {% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>
         {% block title %}
-        {{ title|capfirst }}
+            {{ title|capfirst }}
         {% endblock title %}
     </title>
 
@@ -23,7 +23,7 @@
         {% endblock upper-header %}
 
         {% block header %}
-                <div class="header">
+            <div class="header">
                 <div class="header-grid">
                     <a href="#" class="logo-link">
                         <img src="{% static '/img/icons/logo.png' %}" alt="logo" class="logo">
