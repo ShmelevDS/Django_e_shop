@@ -7,7 +7,7 @@
 		<div class="contacts-grid">
 			<ul class="contacts">
 				{% for icon in icons %}
-				{% if icon.category.name == 'Contacts' %}
+				{% if icon.category.name == 'Contact icons' %}
 				<li class='contacts-items'>
 					<img class="mail-icon-header" src="{{ media_url }}{{ icon.image }}" alt="{{ icon.name }}">
 					<span>{{ icon.text }}</span>

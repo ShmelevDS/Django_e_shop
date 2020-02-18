@@ -1,0 +1,62 @@
+[
+    {
+        "model": "mainapp.icon",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "name": "Facebook",
+            "image": "source/icons/facebook.png",
+            "text": "Facebook"
+        }
+    },
+    {
+        "model": "mainapp.icon",
+        "pk": 2,
+        "fields": {
+            "category": 1,
+            "name": "Twitter",
+            "image": "source/icons/twitter.png",
+            "text": "Twitter"
+        }
+    },
+    {
+        "model": "mainapp.icon",
+        "pk": 3,
+        "fields": {
+            "category": 1,
+            "name": "Google+",
+            "image": "source/icons/google.png",
+            "text": "Google+"
+        }
+    },
+    {
+        "model": "mainapp.icon",
+        "pk": 4,
+        "fields": {
+            "category": 1,
+            "name": "Instagram",
+            "image": "source/icons/instagram.png",
+            "text": "Instagram"
+        }
+    },
+    {
+        "model": "mainapp.icon",
+        "pk": 5,
+        "fields": {
+            "category": 2,
+            "name": "Phone",
+            "image": "source/icons/phone.png",
+            "text": "+7 (985) 259-02-58"
+        }
+    },
+    {
+        "model": "mainapp.icon",
+        "pk": 6,
+        "fields": {
+            "category": 2,
+            "name": "E-mail",
+            "image": "source/icons/mail.png",
+            "text": "shopy@gmail.com"
+        }
+    }
+]

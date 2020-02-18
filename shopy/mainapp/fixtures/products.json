@@ -1,0 +1,107 @@
+[
+    {
+        "model": "mainapp.product",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "name": "Reebok Trace Jacket",
+            "image": "source/products/product_3.png",
+            "short_desc": "Nice jacket",
+            "full_desc": "Really nice jacket",
+            "price": "134.56",
+            "quantity": 65,
+			"size": "M",
+			"brand": "Reebok"
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 2,
+        "fields": {
+            "category": 1,
+            "name": "Nike Trace Jacket",
+            "image": "source/products/product_2.png",
+            "short_desc": "Nice jacket",
+            "full_desc": "Really nice jacket",
+            "price": "184.56",
+            "quantity": 65,
+			"size": "L, XL, S",
+			"brand": "Nike"
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 3,
+        "fields": {
+            "category": 1,
+            "name": "Adiddas Trace Jacket",
+            "image": "source/products/product_1.png",
+            "short_desc": "Such a cool jacket",
+            "full_desc": "Warm and waterproof, wow",
+            "price": "250.00",
+            "quantity": 25,
+			"size": "M, XL",
+			"brand": "Adidas"
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 4,
+        "fields": {
+            "category": 1,
+            "name": "Another Trace Jacket",
+            "image": "source/products/product_1.png",
+            "short_desc": "For nice guys",
+            "full_desc": "Such a nice looking jacket",
+            "price": "312.27",
+            "quantity": 37,
+			"size": "M, XL",
+			"brand": "Adidas"
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 5,
+        "fields": {
+            "category": 2,
+            "name": "Leather Jacket",
+            "image": "source/products/product_4.png",
+            "short_desc": "Tough guy edition",
+            "full_desc": "Kick some ass",
+            "price": "450.22",
+            "quantity": 87,
+			"size": "S, M, XL, XXL",
+			"brand": "LeatherJ"
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 6,
+        "fields": {
+            "category": 2,
+            "name": "Raincoat",
+            "image": "source/products/product_4.png",
+            "short_desc": "Perfect for rainy weather",
+            "full_desc": "Extraordinary quality and low price",
+            "price": "278.05",
+            "quantity": 32,
+			"size": "S, XL, XXL",
+			"brand": "LeatherJ"
+        }
+    },
+    {
+        "model": "mainapp.product",
+        "pk": 7,
+        "fields": {
+            "category": 2,
+            "name": "Another Leather Jacket",
+            "image": "source/products/product_4.png",
+            "short_desc": "Such a cool jacket",
+            "full_desc": "Nice quality much comfort",
+            "price": "87.54",
+            "quantity": 29,
+			"size": "S, M, L",
+			"brand": "LeatherJ"
+        }
+    }
+]

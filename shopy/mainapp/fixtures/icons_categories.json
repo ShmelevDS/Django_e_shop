@@ -1,0 +1,18 @@
+[
+    {
+        "model": "mainapp.iconcategory",
+        "pk": 1,
+        "fields": {
+            "name": "Social media",
+            "description": "Social media icons, e. g. facebook, twitter and so on"
+        }
+    },
+    {
+        "model": "mainapp.iconcategory",
+        "pk": 2,
+        "fields": {
+            "name": "Contact icons",
+            "description": "Contact icons, e. g. phone, mail and so on"
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "model": "mainapp.productcategory",
+        "pk": 1,
+        "fields": {
+            "name": "Jackets",
+            "description": "Everybody needs one"
+        }
+    },
+    {
+        "model": "mainapp.productcategory",
+        "pk": 2,
+        "fields": {
+            "name": "Leather Jackets",
+            "description": "Nice for cold ad rainy weather"
+        }
+    }
+]
